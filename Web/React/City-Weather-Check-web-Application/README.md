@@ -1,4 +1,4 @@
-# Tic-Tac-Toe Game
+# City weather check web application
 
 Steps to run this project locally.
 
@@ -8,11 +8,11 @@ Steps to run this project locally.
 
 `git clone https://github.com/DevilsAutumn/Hacktoberfest22.git`
 
-##### 3. Go inside tic tac toe directory and install dependencies by running:
+##### 3. Go inside City weather check web application directory and install dependencies by running:
 
 `npm i`
 
-##### 4. In the project directory (tic-tac-toe directory), run:
+##### 4. In the project directory (City weather check web application directory), run:
 
 `npm start`
 

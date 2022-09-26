@@ -1,4 +1,4 @@
-# Tic-Tac-Toe Game
+# React password generator
 
 Steps to run this project locally.
 
@@ -8,11 +8,11 @@ Steps to run this project locally.
 
 `git clone https://github.com/DevilsAutumn/Hacktoberfest22.git`
 
-##### 3. Go inside tic tac toe directory and install dependencies by running:
+##### 3. Go inside react password generator directory and install dependencies by running:
 
 `npm i`
 
-##### 4. In the project directory (tic-tac-toe directory), run:
+##### 4. In the project directory (react_password_generator directory), run:
 
 `npm start`
 
