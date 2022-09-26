@@ -1,5 +1,5 @@
 ---
-name: "🐛UI Enhancement"
+name: "✏️ UI Enhancement"
 about: "Create a better UI to improve user experience"
 title: ""
 labels: ["enhancement", "hacktoberfest"]
