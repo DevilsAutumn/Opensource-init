@@ -1,6 +1,6 @@
 # HTML/CSS and JavaScript
 
-This is the main repository for all of the projects related to Html, CSS and Javascript.
+This is the main directory for all of the projects related to Html, CSS and Javascript.
 
 |  #  | Project                                                                                                                        | Live Demo                                                              |
 | :-: | ------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------- |
