@@ -3,7 +3,6 @@ name: "✏️ UI Enhancement"
 about: "Create a better UI to improve user experience"
 title: ""
 labels: ["enhancement", "hacktoberfest"]
-assignees: ""
 ---
 
 **Title**
@@ -18,11 +17,11 @@ Add 'x' inside [ ] to cross check box.
 - [ ] Web with Html,css javascript
 - [ ] Web with React
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+**Describe the Issue**
+A clear and concise description of how the current UI is bad.
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+**Expected**
+A clear and concise description of how you expect to improve the UI.
 
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
