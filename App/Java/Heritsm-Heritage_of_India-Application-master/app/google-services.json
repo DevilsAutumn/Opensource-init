@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "524199364619",
+    "firebase_url": "https://heritage-of-india-5b7cd-default-rtdb.firebaseio.com",
+    "project_id": "heritage-of-india-5b7cd",
+    "storage_bucket": "heritage-of-india-5b7cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:524199364619:android:4aa6e57b6e0efe9331df0e",
+        "android_client_info": {
+          "package_name": "heritsm_heritagebyamit.example.heritsm_heritageofindia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "524199364619-22clv0jbci8nv0e15aghq53te135hn6d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBk8dm3mJX1FKNfhv-ziC7hrzHXror2XOQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "524199364619-22clv0jbci8nv0e15aghq53te135hn6d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
