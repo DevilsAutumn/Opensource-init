@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="heritsm_heritagebyamit.example.heritsm_heritageofindia">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/kogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/kogo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HeritsmHeritageOfIndia">
+        <activity android:name=".heritage.HeritageListActivity"/>
+        <activity android:name=".heritage.HeritageActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
