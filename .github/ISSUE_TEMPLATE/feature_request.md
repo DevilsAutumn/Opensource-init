@@ -2,7 +2,7 @@
 name: "✨ Feature request"
 about: "Suggest an idea for this project."
 title: ""
-labels: "enhancement hacktoberfest"
+labels: ["feature-request", "hacktoberfest"]
 assignees: ""
 ---
 

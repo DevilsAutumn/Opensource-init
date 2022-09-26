@@ -1,8 +1,8 @@
 ---
-name: "🐛 Bug report"
-about: "Create a report to help us improve."
+name: "🐛UI Enhancement"
+about: "Create a better UI to improve user experience"
 title: ""
-labels: ["bug", "hacktoberfest"]
+labels: ["enhancement", "hacktoberfest"]
 assignees: ""
 ---
 
