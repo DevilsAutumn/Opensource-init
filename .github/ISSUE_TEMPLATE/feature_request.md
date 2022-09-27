@@ -8,6 +8,9 @@ labels: ["feature-request", "hacktoberfest"]
 **Title**
 Title of the Issue
 
+**Project link**
+[Click here](Paste link of project here)
+
 **Domain**
 Add 'x' inside [ ] to cross check box.
 
