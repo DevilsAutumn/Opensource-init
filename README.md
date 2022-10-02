@@ -38,7 +38,7 @@ For the past 9 years, thousands of people—coders and non-coders alike—have p
 <a href="https://github.com/DevilsAutumn">
 <img src="https://avatars.githubusercontent.com/u/83907321?s=96&v=4" width="75" height="75"><br />
 Bhuvnesh Sharma
-</a>
+</a><br>
 Domain: Web
 <p align="center">
   <a target="_blank"href="https://www.linkedin.com/in/bhuvnesh-sharma-a7560a203/"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -48,31 +48,11 @@ Domain: Web
 <a href="https://github.com/maityamit">
 <img src="https://avatars.githubusercontent.com/u/74618071?v=4" width="75" height="75"><br />
 Amit Maity
-</a>
+</a><br>
 Domain: App(Java)
 <p align="center">
   <a target="_blank"href="https://www.linkedin.com/in/maityamit/"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="mailto:maityamit308@gmail.com"><img src="https://img.shields.io/badge/gmail-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-</p>
-</td><td align="center" valign="top" width="11%">
-<a href="https://github.com/saumyasrv">
-<img src="https://avatars.githubusercontent.com/u/69858216?v=4" width="75" height="75"><br />
-Saumya Srivastava
-</a>
-Domain: App(Kotlin)
-<p align="center">
-  <a target="_blank"href="https://www.linkedin.com/in/saumyasrv10/"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="mailto:saumyasrv10@gmail.com"><img src="https://img.shields.io/badge/gmail-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-</p>
-</td><td align="center" valign="top" width="11%">
-<a href="https://github.com/GeekyMonk07">
-<img src="https://avatars.githubusercontent.com/u/85828597?v=4" width="75" height="75"><br />
-Anmol Gangwar
-</a>
-Domain: App(Flutter)
-<p align="center">
-  <a target="_blank"href="https://www.linkedin.com/in/thelearninggeek/"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="mailto:thelearninggeek07@gmail.com"><img src="https://img.shields.io/badge/gmail-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 </td></tr></tbody></table>
 
