@@ -6,6 +6,7 @@ import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.EditText;
@@ -15,6 +16,7 @@ import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
@@ -38,9 +40,9 @@ public class MainActivity extends AppCompatActivity {
         date_show = findViewById(R.id.date_show);
 
 
-
-
-
+        Date d = new Date();
+        int dmonth = d.getMonth();
+        int dyear = d.getYear()+1900;//there is an addition of 1900 because java date subtracts 1900 from the current year
 
         DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
 
@@ -51,6 +53,12 @@ public class MainActivity extends AppCompatActivity {
                 myCalendar.set(Calendar.YEAR, year);
                 myCalendar.set(Calendar.MONTH, monthOfYear);
                 myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+
+                //Validation to check that date is not before current date
+                if (year<dyear || year==dyear && monthOfYear<dmonth){
+                    Toast.makeText(MainActivity.this, "Please Enter a valid Date", Toast.LENGTH_SHORT).show();
+                    return;
+                }
                 updateLabel();
             }
 
