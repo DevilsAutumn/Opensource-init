@@ -80,10 +80,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String string_pin = pinnum.getText().toString();
-
-                if (TextUtils.isEmpty(string_pin))
+                //Validate if pin does not exceeds or is below 6 characters
+                if (TextUtils.isEmpty(string_pin)||string_pin.length()!=6)
                 {
-                    Toast.makeText(MainActivity.this, "Enter PIN", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Enter Appropriate PIN", Toast.LENGTH_SHORT).show();
                 }
                 else{
                     Intent intent1 = new Intent(MainActivity.this,ResultShowActivity.class);
