@@ -14,6 +14,7 @@ body {
   justify-content: center;
   height: auto;
   margin: 0;
+  background-image: -webkit-linear-gradient(75deg,white 30%, rgb(181, 139, 223) 50%, #e3fdfd 50%);
 }
 
 h1 {
