@@ -42,5 +42,9 @@ canvas {
 }
 
 .toolbox > *:last-child {
+  margin-right: 0;
+}
+.toolbox > *:nth-last-child(2) {
   margin-left: auto;
 }
+
