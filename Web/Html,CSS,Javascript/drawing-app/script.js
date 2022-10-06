@@ -5,6 +5,8 @@ const sizeEL = document.getElementById('size');
 const colorEl = document.getElementById('color');
 const clearEl = document.getElementById('clear');
 
+const eraser=document.getElementById('eraser');
+
 const ctx = canvas.getContext('2d');
 
 let size = 10
@@ -82,5 +84,9 @@ decreaseBtn.addEventListener('click', () => {
 })
 
 colorEl.addEventListener('change', (e) => color = e.target.value)
+
+eraser.addEventListener('click',function(){
+    color="#f5f5f5";
+})
 
 clearEl.addEventListener('click', () => ctx.clearRect(0,0, canvas.width, canvas.height))
