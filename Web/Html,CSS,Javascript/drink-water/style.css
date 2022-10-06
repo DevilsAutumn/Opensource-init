@@ -98,6 +98,12 @@ h3 {
   transition: 0.3s ease;
 }
 
+.time_stamp{
+  color: #fff;
+  background-color: var(--border-color);
+  text-align: center;
+}
+
 .text {
   text-align: center;
   margin: 0 0 5px;
