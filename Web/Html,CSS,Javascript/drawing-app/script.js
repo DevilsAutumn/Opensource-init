@@ -93,3 +93,12 @@ eraser.addEventListener("click", function () {
 clearEl.addEventListener("click", () =>
   ctx.clearRect(0, 0, canvas.width, canvas.height)
 );
+
+clickEL.addEventListener("click", function capture() {
+  html2canvas(document.body).then((canvas) => {
+    let a = document.createElement("a");
+    a.download = "ss.png";
+    a.href = canvas.toDataURL("image/png");
+    a.click(); // MAY NOT ALWAYS WORK!
+  });
+});
