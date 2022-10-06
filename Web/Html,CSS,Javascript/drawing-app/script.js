@@ -95,7 +95,7 @@ clearEl.addEventListener("click", () =>
 );
 
 clickEL.addEventListener("click", function capture() {
-  html2canvas(document.body).then((canvas) => {
+  html2canvas(document.getElementById("canvas")).then((canvas) => {
     let a = document.createElement("a");
     a.download = "ss.png";
     a.href = canvas.toDataURL("image/png");
