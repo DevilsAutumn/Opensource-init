@@ -121,6 +121,10 @@ main {
   transform: translateY(101%);
   overflow-y: auto;
   transition: transform 0.3s ease-in;
+  background-color: purple;
+  opacity: 0.8;
+  color: white;
+  font-weight: bold;
 }
 
 .movie:hover .overview {
