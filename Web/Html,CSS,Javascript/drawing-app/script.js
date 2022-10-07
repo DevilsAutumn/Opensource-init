@@ -5,27 +5,27 @@ const sizeEL = document.getElementById('size');
 const colorEl = document.getElementById('color');
 const clearEl = document.getElementById('clear');
 
+
 const ctx = canvas.getContext('2d');
-let eraseButton = document.getElementById("button-erase");
-let toolType = document.getElementById("tool-type");
-let size = 10
-let isPressed = false
-colorEl.value = 'black'
-let color = colorEl.value
-let x
-let y
-let erase_bool = false;
+canvas.width = 800;
+canvas.height = 700; 
+
+
+let size = 10;
+let isPressed = false;
+colorEl.value = 'black';
+let color = colorEl.value;
+let x=0;
+let y=0;
 
 canvas.addEventListener('mousedown', (e) => {
     isPressed = true
-
     x = e.offsetX
     y = e.offsetY
 })
 
 document.addEventListener('mouseup', (e) => {
     isPressed = false
-
     x = undefined
     y = undefined
 })
@@ -34,10 +34,8 @@ canvas.addEventListener('mousemove', (e) => {
     if(isPressed) {
         const x2 = e.offsetX
         const y2 = e.offsetY
-
         drawCircle(x2, y2)
         drawLine(x, y, x2, y2)
-
         x = x2
         y = y2
     }
@@ -65,34 +63,31 @@ function updateSizeOnScreen() {
 
 increaseBtn.addEventListener('click', () => {
     size += 5
-
     if(size > 50) {
         size = 50
     }
-
     updateSizeOnScreen()
 })
 
 decreaseBtn.addEventListener('click', () => {
     size -= 5
-
     if(size < 5) {
         size = 5
     }
-
     updateSizeOnScreen()
 })
-canvas.addEventListener("click", () => {
-  //set range title to pen size
-  toolType.innerHTML = "Pen";
-  erase_bool = false;
-});
-//Button for eraser mode
-eraseButton.addEventListener("click", () => {
-  erase_bool = true;
-  //set range title to erase size
-  toolType.innerHTML = "Eraser";
-});
+
+// Saving drawing as image
+let saveBtn = document.querySelector(".save")
+saveBtn.addEventListener("click", () => {
+    let data = canvas.toDataURL("imag/png")
+    let a = document.createElement("a")
+    a.href = data
+    // what ever name you specify here
+    // the image will be saved as that name
+    a.download = "sketch.png"
+    a.click()
+})
 
 colorEl.addEventListener('change', (e) => color = e.target.value)
 
