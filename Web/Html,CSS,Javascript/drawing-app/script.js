@@ -1,84 +1,110 @@
-const canvas = document.getElementById('canvas');
-const increaseBtn = document.getElementById('increase');
-const decreaseBtn = document.getElementById('decrease');
-const sizeEL = document.getElementById('size');
-const colorEl = document.getElementById('color');
-const clearEl = document.getElementById('clear');
+const canvas = document.getElementById("canvas");
+const increaseBtn = document.getElementById("increase");
+const decreaseBtn = document.getElementById("decrease");
+const sizeEL = document.getElementById("size");
+const colorEl = document.getElementById("color");
+const clearEl = document.getElementById("clear");
+const clickEL = document.getElementById("click");
 
+const eraser = document.getElementById("eraser");
 
-const ctx = canvas.getContext('2d');
-canvas.width = 800;
-canvas.height = 700; 
-
+const ctx = canvas.getContext("2d");
 
 let size = 10;
 let isPressed = false;
-colorEl.value = 'black';
+colorEl.value = "black";
 let color = colorEl.value;
-let x=0;
-let y=0;
+let x;
+let y;
 
-canvas.addEventListener('mousedown', (e) => {
-    isPressed = true
-    x = e.offsetX
-    y = e.offsetY
-})
+canvas.addEventListener("mousedown", (e) => {
+  isPressed = true;
 
-document.addEventListener('mouseup', (e) => {
-    isPressed = false
-    x = undefined
-    y = undefined
-})
+  x = e.offsetX;
+  y = e.offsetY;
+});
 
-canvas.addEventListener('mousemove', (e) => {
-    if(isPressed) {
-        const x2 = e.offsetX
-        const y2 = e.offsetY
-        drawCircle(x2, y2)
-        drawLine(x, y, x2, y2)
-        x = x2
-        y = y2
-    }
-})
+document.addEventListener("mouseup", (e) => {
+  isPressed = false;
+
+  x = undefined;
+  y = undefined;
+});
+
+canvas.addEventListener("mousemove", (e) => {
+  if (isPressed) {
+    const x2 = e.offsetX;
+    const y2 = e.offsetY;
+
+    drawCircle(x2, y2);
+    drawLine(x, y, x2, y2);
+
+    x = x2;
+    y = y2;
+  }
+});
 
 function drawCircle(x, y) {
-    ctx.beginPath();
-    ctx.arc(x, y, size, 0, Math.PI * 2)
-    ctx.fillStyle = color
-    ctx.fill()
+  ctx.beginPath();
+  ctx.arc(x, y, size, 0, Math.PI * 2);
+  ctx.fillStyle = color;
+  ctx.fill();
 }
 
 function drawLine(x1, y1, x2, y2) {
-    ctx.beginPath()
-    ctx.moveTo(x1, y1)
-    ctx.lineTo(x2, y2)
-    ctx.strokeStyle = color
-    ctx.lineWidth = size * 2
-    ctx.stroke()
+  ctx.beginPath();
+  ctx.moveTo(x1, y1);
+  ctx.lineTo(x2, y2);
+  ctx.strokeStyle = color;
+  ctx.lineWidth = size * 2;
+  ctx.stroke();
 }
 
 function updateSizeOnScreen() {
-    sizeEL.innerText = size
+  sizeEL.innerText = size;
 }
 
-increaseBtn.addEventListener('click', () => {
-    size += 5
-    if(size > 50) {
-        size = 50
-    }
-    updateSizeOnScreen()
-})
+increaseBtn.addEventListener("click", () => {
+  size += 5;
 
-decreaseBtn.addEventListener('click', () => {
-    size -= 5
-    if(size < 5) {
-        size = 5
-    }
-    updateSizeOnScreen()
-})
+  if (size > 50) {
+    size = 50;
+  }
+
+  updateSizeOnScreen();
+});
+
+decreaseBtn.addEventListener("click", () => {
+  size -= 5;
+
+  if (size < 5) {
+    size = 5;
+  }
+
+  updateSizeOnScreen();
+});
+
+colorEl.addEventListener("change", (e) => (color = e.target.value));
+
+eraser.addEventListener("click", function () {
+  color = "#f5f5f5";
+});
+
+clearEl.addEventListener("click", () =>
+  ctx.clearRect(0, 0, canvas.width, canvas.height)
+);
+
+clickEL.addEventListener("click", function capture() {
+  html2canvas(document.getElementById("canvas")).then((canvas) => {
+    let a = document.createElement("a");
+    a.download = "ss.png";
+    a.href = canvas.toDataURL("image/png");
+    a.click(); // MAY NOT ALWAYS WORK!
+  });
+});
 
 // Saving drawing as image
-let saveBtn = document.querySelector(".save")
+let saveBtn = document.querySelector(".click")
 saveBtn.addEventListener("click", () => {
     let data = canvas.toDataURL("imag/png")
     let a = document.createElement("a")
@@ -88,7 +114,3 @@ saveBtn.addEventListener("click", () => {
     a.download = "sketch.png"
     a.click()
 })
-
-colorEl.addEventListener('change', (e) => color = e.target.value)
-
-clearEl.addEventListener('click', () => ctx.clearRect(0,0, canvas.width, canvas.height))

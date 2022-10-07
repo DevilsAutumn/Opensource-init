@@ -17,7 +17,6 @@ body {
 
 canvas {
   border: 2px solid steelblue;
-  cursor : crosshair;
 }
 
 .toolbox {
@@ -36,17 +35,15 @@ canvas {
   justify-content: center;
   font-size: 2rem;
   height: 50px;
-  width: 120px;
+  width: 50px;
   margin: 0.25rem;
   padding: 0.25rem;
   cursor: pointer;
 }
 
-.save{
-    font-weight: bold;
-    background-color: #0234ed;
-}
-
 .toolbox > *:last-child {
+  margin-right: 0;
+}
+.toolbox > *:nth-last-child(2) {
   margin-left: auto;
 }

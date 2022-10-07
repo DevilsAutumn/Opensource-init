@@ -3,6 +3,7 @@ const liters = document.getElementById('liters')
 const percentage = document.getElementById('percentage')
 const remained = document.getElementById('remained')
 
+
 updateBigCup()
 
 smallCups.forEach((cup, idx) => {
@@ -25,7 +26,29 @@ function highlightCups(idx) {
 
     updateBigCup()
 }
+function getDateTime() {
+    var now     = new Date(); 
+    var hour    = now.getHours();
+    var minute  = now.getMinutes();
+    var second  = now.getSeconds(); 
+    if(hour.toString().length == 1) {
+         hour = '0'+hour;
+    }
+    if(minute.toString().length == 1) {
+         minute = '0'+minute;
+    }
+    if(second.toString().length == 1) {
+         second = '0'+second;
+    }   
+    var dateTime = +hour+':'+minute+':'+second;   
+     return dateTime;
+}
 
+// example usage: realtime clock
+setInterval(function(){
+    currentTime = getDateTime();
+    document.getElementById("digital-clock").innerHTML = currentTime;
+}, 1000);
 function updateBigCup() {
     const fullCups = document.querySelectorAll('.cup-small.full').length
     const totalCups = smallCups.length
@@ -37,6 +60,7 @@ function updateBigCup() {
         percentage.style.visibility = 'visible'
         percentage.style.height = `${fullCups / totalCups * 330}px`
         percentage.innerText = `${fullCups / totalCups * 100}%`
+        time_stamp.innerText=`${getDateTime()}`;
     }
 
     if(fullCups === totalCups) {
