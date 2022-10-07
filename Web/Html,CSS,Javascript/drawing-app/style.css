@@ -16,7 +16,7 @@ body {
 }
 
 canvas {
-  border: 2px solid steelblue;
+  border: 3px solid steelblue;
 }
 
 .toolbox {
@@ -33,12 +33,13 @@ canvas {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   height: 50px;
   width: 50px;
   margin: 0.25rem;
   padding: 0.25rem;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .toolbox > *:last-child {
@@ -47,4 +48,19 @@ canvas {
 .toolbox > *:nth-last-child(2) {
   margin-left: auto;
 }
+
+@media only screen and (max-width: 750px) {
+    #canvas{
+        width:80vw;
+        height:70vh;
+    }
+    .toolbox{
+      width:80vw;
+      height:15vh;
+    }
+    .toolbox > * {
+      font-size: 1.2rem;
+      border-radius: 10px;
+    }
+  }
 
