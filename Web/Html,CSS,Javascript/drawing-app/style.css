@@ -49,7 +49,7 @@ canvas {
   margin-left: auto;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
     #canvas{
         width:80vw;
         height:70vh;
