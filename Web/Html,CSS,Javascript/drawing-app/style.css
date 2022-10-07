@@ -41,6 +41,7 @@ canvas {
   padding: 0.25rem;
   cursor: pointer;
   border-radius: 10px;
+  box-shadow: 2px 2px  #e8ba22;
 }
 
 .toolbox > *:last-child {
