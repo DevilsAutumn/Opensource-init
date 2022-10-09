@@ -1,16 +1,7 @@
-# Hacktoberfest 2022
-
-Hacktoberfest is digitalocean’s annual event that encourages people to contribute to open source throughout october. Much of modern tech infrastructure—including some of digitalocean’s own products—relies on open-source projects built and maintained by passionate people who often don’t have the staff or budgets to do much more than keep the project alive. Hacktoberfest is all about giving back to those projects, sharpening skills, and celebrating all things open source, especially the people that make open source so special.
-
-For the past 9 years, thousands of people—coders and non-coders alike—have participated in hacktoberfest to support the projects they use and love, learn and practice skills that will enhance their careers, and meet new people who love open source as much as they do.
+# Getting started with opensource
+This repository is made to help the newbies who want to get started with opensource but couldn't find a project or want to learn/practice to open pull request/issue and then work on it. The project maintainers are going to help people wherever they get stuck.
 
 ## ⭐ How to get started?
-
-1. First of all register yourselves on the [official website](https://hacktoberfest.com/) of Hacktoberfest.
-
-2. Read [rules and regulations](https://hacktoberfest.com/participation/) carefully before contributing during Hacktoberfest.
-
-3. You can refer to the following articles on the basics of Git and Github and also contact the Project Mentors, in case you are stuck:
 
 - [Watch this video to get started, if you have no clue about open source](https://youtu.be/SL5KKdmvJ1U)
 - [Forking a Repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
