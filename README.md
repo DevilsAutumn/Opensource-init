@@ -1,5 +1,6 @@
 # Getting started with opensource
 This repository is made to help the newbies who want to get started with opensource but couldn't find a project or want to learn/practice to open pull request/issue and then work on it. The project maintainers are going to help people wherever they get stuck.
+The repo contains basic Web and Android related projects so even if you are a beginner to coding and know just basics of web and app you can contribute.
 
 ## ⭐ How to get started?
 
