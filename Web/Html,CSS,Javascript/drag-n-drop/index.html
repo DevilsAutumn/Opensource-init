@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Drag N Drop</title>
-  </head>
-  <body>
-    <div class="empty">
-      <div class="fill" draggable="true"></div>
-    </div>
-    <div class="empty"></div>
-    <div class="empty"></div>
-    <div class="empty"></div>
-    <div class="empty"></div>
 
-    <script src="script.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+  <title>Drag N Drop</title>
+</head>
+
+<body>
+  <div class="empty">
+    <div class="fill" draggable="true">
+      <input type='file' name='img' id='uploadimage' accept="image/*" />
+    </div>
+  </div>
+  <div class="empty"></div>
+  <div class="empty"></div>
+  <div class="empty"></div>
+  <div class="empty"></div>
+
+  <script src="script.js"></script>
+</body>
+
 </html>

@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --crossVal: block;
+  --addVal: None;
+}
+
 body {
   background-color: steelblue;
   display: flex;
@@ -21,10 +26,34 @@ body {
 }
 
 .fill {
-  background-image: url('https://source.unsplash.com/random/150x150');
+  background-image: url("https://source.unsplash.com/random/150x150");
   height: 145px;
   width: 145px;
   cursor: pointer;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.fill::after {
+  content: url("./remove.png");
+
+  display: var(--crossVal);
+  width: 12px;
+  height: 12px;
+  position: relative;
+  left: 118px;
+}
+
+.fill::before {
+  content: url("./plus.png");
+
+  display: var(--addVal);
+  width: 145px;
+  height: 145px;
+  position: relative;
+  left: 40px;
+  top: 40px;
 }
 
 .hold {
@@ -35,6 +64,10 @@ body {
   background-color: #333;
   border-color: white;
   border-style: dashed;
+}
+
+#uploadimage {
+  display: none;
 }
 
 @media (max-width: 800px) {
