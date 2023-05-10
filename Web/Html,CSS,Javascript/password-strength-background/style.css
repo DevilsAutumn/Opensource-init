@@ -13,13 +13,13 @@ body {
 }
 
 .background {
-  background: url('https://images.unsplash.com/photo-1556745757-8d76bdb6984b')
+  background: url("https://images.unsplash.com/photo-1578359968130-76b59bb5af13?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2874&q=80")
     no-repeat center center/cover;
   position: absolute;
-  top: -20px;
-  bottom: -20px;
-  left: -20px;
-  right: -20px;
+  top: -35px;
+  bottom: -35px;
+  left: -35px;
+  right: -35px;
   z-index: -1;
-  filter: blur(20px);
+  filter: blur(50px);
 }
