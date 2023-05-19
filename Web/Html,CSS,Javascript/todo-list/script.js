@@ -16,9 +16,6 @@ form.addEventListener("submit", (e) => {
 
 function addTodo(todo) {
   let todoText = input.value;
-  if (todoText === "") {
-    alert("please enter a task todo");
-  }
   if (todo) {
     todoText = todo.text;
   }
@@ -46,8 +43,11 @@ function addTodo(todo) {
     todosUL.appendChild(todoEl);
 
     input.value = "";
+    scrollToBottom();
 
     updateLS();
+  }else{
+    alert("please enter a task todo");
   }
 }
 
@@ -64,4 +64,9 @@ function updateLS() {
   });
 
   localStorage.setItem("todos", JSON.stringify(todos));
+}
+
+function scrollToBottom(){
+  document.body.scrollTop = document.body.scrollHeight;
+  document.documentElement.scrollTop = document.documentElement.scrollHeight;
 }
