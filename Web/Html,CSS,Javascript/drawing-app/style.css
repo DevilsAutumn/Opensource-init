@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #f5f5f5;
+  background-color: #e8ba22;
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
@@ -16,12 +16,13 @@ body {
 }
 
 canvas {
-  border: 2px solid steelblue;
+  border: 3px solid steelblue;
+  background-color: whitesmoke;
 }
 
 .toolbox {
   background-color: steelblue;
-  border: 1px solid slateblue;
+  border: 3px solid slateblue;
   display: flex;
   width: 804px;
   padding: 1rem;
@@ -33,12 +34,14 @@ canvas {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   height: 50px;
   width: 50px;
   margin: 0.25rem;
   padding: 0.25rem;
   cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 2px 2px  #e8ba22;
 }
 
 .toolbox > *:last-child {
@@ -47,4 +50,19 @@ canvas {
 .toolbox > *:nth-last-child(2) {
   margin-left: auto;
 }
+
+@media only screen and (max-width: 800px) {
+    #canvas{
+        width:80vw;
+        height:70vh;
+    }
+    .toolbox{
+      width:80vw;
+      height:15vh;
+    }
+    .toolbox > * {
+      font-size: 1.2rem;
+      border-radius: 10px;
+    }
+  }
 
